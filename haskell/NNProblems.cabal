@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 35042e30cf295517925bbd51fa512bb7a2ded628001680cdd485a0ac7bee54bf
+-- hash: 09cae3862cca01f5f4fa2f7d5c2a9b9304c2f46f7def9087a23f847810445704
 
 name:           NNProblems
 version:        0.1.0.0
@@ -18,7 +18,6 @@ build-type:     Simple
 
 library
   exposed-modules:
-      Data.String.Strip
       Problems.Problem001
       Problems.Problem002
   other-modules:
@@ -33,7 +32,6 @@ test-suite NNProblems-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Data.String.StripSpec
       Problems.Problem001Spec
       Problems.Problem002Spec
       Paths_NNProblems
