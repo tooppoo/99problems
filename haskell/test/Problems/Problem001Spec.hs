@@ -9,3 +9,12 @@ spec = do
     describe "myLast [1, 2, 3, 4]" $ do
       it "should be 4" $ do
         myLast [1, 2, 3, 4] `shouldBe` 4
+    describe "myLast ['x', 'y', 'z']" $ do
+      it "should be 'z'" $ do
+        myLast ['x', 'y', 'z'] `shouldBe` 'z'
+    describe "myLast [1]" $ do
+      it "should be 1" $ do
+        myLast [1] `shouldBe` 1
+    describe "myLast []" $ do
+      it "should throw error" $ do
+        myLast [] `shouldThrow` anyException
