@@ -1,6 +1,7 @@
 module Problems.Problem001Spec where
 
-import Test.Hspec
+import Test.Hspec  
+import Control.Exception (evaluate)
 import Problems.Problem001
 
 spec :: Spec
@@ -17,4 +18,4 @@ spec = do
         myLast [1] `shouldBe` 1
     describe "myLast []" $ do
       it "should throw error" $ do
-        myLast [] `shouldThrow` anyException
+        evaluate (myLast []) `shouldThrow` anyException
