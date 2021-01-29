@@ -1,0 +1,7 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "NNProblems:lib"
+
+    - path: "./test"
+      component: "NNProblems:test:NNProblems-test"
