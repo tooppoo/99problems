@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a315977b9b05c85ad2a867d1e8f4cd71c0ed368b6df25058a03cced4ec2c20e7
+-- hash: 7aba47c8ebb38dad2a59ebfb2811ea66ee1df95d8da3f7cd2d49692650de9a17
 
 name:           NNProblems
 version:        0.1.0.0
@@ -27,6 +27,7 @@ library
       Problems.Problem007
       Problems.Problem008
       Problems.Problem009
+      Problems.Problem010
   other-modules:
       Paths_NNProblems
   hs-source-dirs:
@@ -59,6 +60,7 @@ test-suite NNProblems-test
       Problems.Problem007Spec
       Problems.Problem008Spec
       Problems.Problem009Spec
+      Problems.Problem010Spec
       Paths_NNProblems
   hs-source-dirs:
       test
