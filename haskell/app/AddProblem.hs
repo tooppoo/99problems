@@ -13,7 +13,7 @@ main = do
   writeFile ("./test/Problems/Problem%03dSpec.hs" <| n) (spec n)
 
 problem :: Int -> String
-problem n = "module Problems.Problem%03d where" <| n
+problem n = "module Problems.Problem%03d where\n" <| n
 
 spec :: Int -> String
 spec num = concat [
@@ -23,7 +23,7 @@ spec num = concat [
     "import Problems.Problem%03d\n" <| num,
     "\n",
     "spec = do\n",
-    "  describe \"Problem%03d\" $ do" <| num
+    "  describe \"Problem%03d\" $ do\n" <| num
   ]
 
 (<|) :: String -> Int -> String
