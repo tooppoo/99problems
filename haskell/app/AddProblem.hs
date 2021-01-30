@@ -7,7 +7,7 @@ main :: IO ()
 main = do
   args <- getArgs
 
-  let strN = args !! 0
+  let strN = head args
       n = read strN :: Int
   writeFile ("./src/Problems/Problem%03d.hs" <| n) (problem n)
   writeFile ("./test/Problems/Problem%03dSpec.hs" <| n) (spec n)

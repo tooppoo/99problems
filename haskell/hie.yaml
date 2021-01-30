@@ -3,5 +3,11 @@ cradle:
     - path: "./src"
       component: "NNProblems:lib"
 
+    - path: "./app/AddProblem.hs"
+      component: "NNProblems:exe:addProblem"
+
+    - path: "./app/Paths_NNProblems.hs"
+      component: "NNProblems:exe:addProblem"
+
     - path: "./test"
       component: "NNProblems:test:NNProblems-test"
