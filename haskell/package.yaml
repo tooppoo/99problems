@@ -11,6 +11,15 @@ library:
 dependencies:
   - base >= 4.7 && < 5
 
+executables:
+  addProblem:
+    main: AddProblem.hs
+    source-dirs: app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+
 tests:
   NNProblems-test:
     main: Spec.hs
