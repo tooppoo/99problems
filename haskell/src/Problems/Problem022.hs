@@ -1,5 +1,5 @@
 module Problems.Problem022 where
-  range :: Int -> Int -> [Int]
+  range :: (Integral a) => a -> a -> [a]
   range begin end 
     | begin == end = [begin]
     | begin > end = reverse (range end begin)

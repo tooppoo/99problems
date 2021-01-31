@@ -3,6 +3,7 @@ module Problems.Problem039Spec where
 import Test.Hspec
 import Problems.Problem039
 
+spec :: SpecWith ()
 spec = do
   describe "Problem039" $ do
     describe "primesR 10 20" $ do
