@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 797c05ddddca25c727bd73568a397a0ff149d84c07ccc2bfe197176b849dddb9
+-- hash: 15b0739836d8af57927141da60140aa56ebcbc5504b32bf4bf43203b7a37519e
 
 name:           NNProblems
 version:        0.1.0.0
@@ -55,6 +55,7 @@ library
       Problems.Problem039
       Problems.Problem040
       Problems.Problem041
+      Problems.Problem046_048
   other-modules:
       Paths_NNProblems
   hs-source-dirs:
@@ -62,6 +63,7 @@ library
   build-depends:
       base >=4.7 && <5
     , random
+    , template-haskell
   default-language: Haskell2010
 
 executable addProblem
@@ -74,6 +76,7 @@ executable addProblem
   build-depends:
       base >=4.7 && <5
     , random
+    , template-haskell
   default-language: Haskell2010
 
 test-suite NNProblems-test
@@ -117,6 +120,7 @@ test-suite NNProblems-test
       Problems.Problem039Spec
       Problems.Problem040Spec
       Problems.Problem041Spec
+      Problems.Problem046_048Spec
       Paths_NNProblems
   hs-source-dirs:
       test
@@ -128,4 +132,5 @@ test-suite NNProblems-test
     , hspec
     , hspec-discover
     , random
+    , template-haskell
   default-language: Haskell2010
