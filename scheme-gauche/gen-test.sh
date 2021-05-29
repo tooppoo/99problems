@@ -13,5 +13,5 @@ cat << EOS > "$new_dir/test.scm"
 (test-section "SECTION")
 (test "TEST CASE"
   EXPECTED (lambda () TEST_BODY))
-(test-end :exit-on-failure #t)
+(test-end)
 EOS

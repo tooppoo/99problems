@@ -1,0 +1,6 @@
+(define (element-at l at)
+  (if (<= (length l) at)
+    '()
+    (if (eq? at 1)
+      (car l)
+      (element-at (cdr l) (- at 1)))))
