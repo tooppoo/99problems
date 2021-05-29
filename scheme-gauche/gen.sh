@@ -1,5 +1,5 @@
 
-index=$1
+index=$(printf %02d $1)
 
 new_dir="problem$index"
 mkdir $new_dir

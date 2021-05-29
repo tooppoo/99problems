@@ -1,5 +1,5 @@
 (use gauche.test)
-(test-start :problem-2)
+(test-start :problem-02)
 (include "src.scm")
 (test-section "with non-empty list")
 (test "find the last but one box of a list"

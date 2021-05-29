@@ -1,5 +1,5 @@
 (use gauche.test)
-(test-start :problem-4)
+(test-start :problem-04)
 (include "src.scm")
 (test-section "with non-empty list")
 (test "find the number of elements of a list"

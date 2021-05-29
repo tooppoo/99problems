@@ -1,5 +1,5 @@
 (use gauche.test)
-(test-start :problem-3)
+(test-start :problem-03)
 (include "src.scm")
 (test-section "with non-empty list")
 (test "find the K'th element of a list"
