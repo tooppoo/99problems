@@ -12,14 +12,14 @@ jobs:
         working-directory: haskell
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-haskell@v1
+    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
+    - uses: actions/setup-haskell@048c29979717135f04282c42c2186bb5945b2d8f # v1
       with:
         ghc-version: '8.10.3'
         cabal-version: '3.2'
 
     - name: Cache
-      uses: actions/cache@v2
+      uses: actions/cache@8492260343ad570701412c2f464a5877dc76bace # v2
       env:
         cache-name: cache-cabal
       with:
