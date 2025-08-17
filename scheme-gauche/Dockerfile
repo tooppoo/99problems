@@ -1,1 +1,1 @@
-FROM schemers/gauche:latest
+FROM schemers/gauche:latest@sha256:88e8cb2970f018071a49d16f214bf55f27f219a12ad7f5eaacd68086e6b199fa
